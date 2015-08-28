@@ -7,7 +7,21 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
+    "graceful-fs": "^4.1.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.6",
+    "gulp-wrap": "^0.11.0",
+    "merge-stream": "^1.0.0",
+    "module-deps": "^3.9.1",
+    "strip-bom": "^2.0.0",
+    "through2": "^2.0.0",
+    "vinyl": "^0.5.1"
   },
   "dependencies": {
+    "ampersand-view": "^8.0.1"
   }
 }
