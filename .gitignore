@@ -1,0 +1,35 @@
+#### Application Build
+########
+
+node_modules/
+npm-debug.log
+
+
+#### Development Environment
+########
+
+## Windows detritus
+####
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+# Folder config file
+Desktop.ini
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+## Mac OS detritus
+########
+# Desktop Services Store folder config file
+.DS_Store
+
+
+## vim
+########
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~

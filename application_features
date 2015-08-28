@@ -1,0 +1,74 @@
+a document to capture the "fleshing out of features" of the app
+
+The app will be multi-tenant (multi-user).  Users can create and manage lists of tasks.  Tasks can be copmleted, and
+have an associated deadline.  Further, task lists can be shared between users, each with their own access permissions,
+managed by the owner.
+
+Task Lists
+====
+Task lists are an ordered list of tasks.  They are owned by a single user, who can manage its lifecycle and the
+permissions of users it is shared with.
+
+The configurable permissions of a user when shared a task list are:
+ - can manage tasks
+ - can manage task completion
+ -(SKIP THIS ONE! unnecessary complexty/loose-ends; doesn't quite make sense privacy/security wise) can request re-share of the task list | can re-share task list (with permission level or lower)
+
+Managing task lists
+----
+Create a task list.
+Share a task list with a user with certain permissions.
+Edit the permissions of a user to a shared task list.
+Stop sharing a task list with a user.
+Delete a task list.
+Hide (archive) a task list.
+Unhide (unarchive) a task list.
+Duplicate a task list.
+
+Managing tasks
+----
+Add a task to a task list.
+Duplicate a task of a task list
+Delete a task of a task list.
+Edit a task of a task list.
+Hide (archive) a task of a task list.
+Unhide (unarchive) a task of a task list.
+
+
+User Account
+====
+Users have a unique alphanumeric name, with the ability to set a preferred vanity version that allows interspersing
+special characters as desired, which the system will effectively otherwise ignore except when displaying the name.
+User accounts will be identified by an email address and authenticated by a password.
+
+Managing a user account
+----
+Change account password.
+Change vanity name preference.
+Delete account and all data.
+Export all account data.
+Edit biographical information (name, location, gender).
+Generate new random avatar.
+
+
+yUML code for (parts of) the above
+====
+http://yuml.me/62c5f442.png
+
+[User]-(Manage task lists)
+(Manage task lists)<(Create a task list)
+(Manage task lists)<(Share a task list with a user with certain permissions)
+(Manage task lists)<(Edit the permissions of a user to a shared task list)
+(Manage task lists)<(Stop sharing a task list with a user)
+(Manage task lists)<(Delete a task list)
+(Manage task lists)<(Hide a task list)
+(Manage task lists)<(Unhide a task list)
+(Manage task lists)<(Duplicate a task list)
+(Manage task lists)>(View a filtered list of tasks)
+(Manage task lists)>(Manage tasks of a task list)
+(Manage tasks of a task list)<(Add a task to a task list)
+(Manage tasks of a task list)<(Duplicate a task of a task list)
+(Manage tasks of a task list)<(Delete a task of a task list)
+(Manage tasks of a task list)<(Edit a task of a task list)
+(Manage tasks of a task list)<(Hide a task of a task list)
+(Manage tasks of a task list)<(Unhide a task of a task list)
