@@ -1,0 +1,14 @@
+{
+    "ecmaFeatures": {
+        "arrowFunctions": true,                     // enable arrow functions
+        "modules": true                             // enable modules and global strict mode
+    },
+
+    "env": {
+        "browser": true                             // browser global variables.
+    },
+
+    "globals": {
+        "require": false
+    }
+}
