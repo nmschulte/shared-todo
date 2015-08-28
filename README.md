@@ -1,11 +1,18 @@
 shared task list application
 ========
 
-Skip to the [thoughts section](#thoughts); the overview/purpose is scatter-brained.
+Getting Started
+----
+1. First, read [this document](./README.md) (sorry, it's a bit scatter-brained at the moment).
+2. Next, look at [the use case design detals](./application_features) and the associated [use case
+rendering](./use_case_diagram.png).
 
 Overview / Purpose
 ----
 
+
+(Use Case) Design Goals
+----
 * works in real-time as much as possible
 * a more complex "todo list demo" application, making it a better candidate to exemplify solutions to complex problems
 generally only exposed in larger single page applications (thick-client).
@@ -19,7 +26,8 @@ possible (clever?) project names
 * WeTask / TaskUs / TaskMe
 * ShareTask
 
-thoughts
+
+initial thoughts
 ----
 I think if the application has features that deal with data in a "real-time" aspect, the real-time complexity should provide a
 better sampling/basis to exemplify.  Updates to data from a source other than the DOM (the immediate user) are more
