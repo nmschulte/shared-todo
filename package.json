@@ -1,0 +1,13 @@
+{
+  "name": "shared-todo",
+  "version": "0.0.0",
+  "description": "shared task list application",
+  "main": "index.js",
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
