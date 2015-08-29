@@ -1,5 +1,15 @@
 a document to capture the "fleshing out of features" of the app
 
+so far, this document only deals with the use cases available assuming the user is already authenticated/logged-in.  the
+app will need to handle the full life-cycle in the end, so keep that in mind. really, all of the use case will hang from
+a single point ("use case", or "shared-todo", if you like). the implementation should be able to run forever,
+ultimately; possibly even beyond version bumps, if we're really that entheusiastic (we are! right? I mean,
+versioning/updates/upgrades are inherent in the UX, no?  We talk to the user about them in the app so they're aware and
+understanding too, why should those components be special?)...
+
+BEGIN!
+====
+
 The app will be multi-tenant (multi-user).  Users can create and manage lists of tasks.  Tasks can be copmleted, and
 have an associated deadline.  Further, task lists can be shared between users, each with their own access permissions,
 managed by the owner.
