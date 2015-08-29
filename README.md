@@ -1,21 +1,35 @@
 shared task list application
 ========
 
-Getting Started
-----
-1. First, read [this document](./README.md) (sorry, it's a bit scatter-brained at the moment).
-2. Next, look at [the use case design detals](./application_features) and the associated [use case
-rendering](./use_case_diagram.png).
-
 Overview / Purpose
 ----
+"Title is misleading!"  No, really, the project title is misleading: this is a shared task list application, but the
+goals are much bigger than that.  This project is to serve as a sandbox for playing with the supervising presenter
+pattern in front-end development with unopinionated/unprescriptive (MV*) toolkits/non-frameworky frameworks, like
+Backbone.js and Ampersand.js.  So really, this project is about learning and should be seen as a tool to help convey
+this knowledge.
+
+Why the supervising presenter pattern?  This pattern deals with concerns that tend to only be an issue in "larger"
+single page applications, beyond those needed to support a static version of a simple "todo list" application, like
+Backbone.js's TodoMVC example.  The term "larger" is a loose one, and I suspect we/I really mean longer-lived, more
+interactive/rich; *thick*.
 
 
 (Use Case) Design Goals
 ----
-* works in real-time as much as possible
-* a more complex "todo list demo" application, making it a better candidate to exemplify solutions to complex problems
-generally only exposed in larger single page applications (thick-client).
+As outlined above, it seems we first need a more complex example definition.  What kind of complexity?  Well, mainly,
+data interaction, and specifically, interaction/updates that aren't from the browser's user via the DOM.  This could be
+timed events from JS land or such, but my mind starts leaning toward video-game/render-loop territory when I think
+about real applications that work that way (which likely have their own set of concerns dealing with renderloop ideas
+and evented I/O).  Otherwise, network I/O from e.g. a multi-user system seems like it would fit the bill nicely.
+Pairing that with a UX that emphasizes a rich/thick-client interaction, and I think we can expand the common todo list
+editor example to suit while still keeping it approachable.
+
+I've outlined a more complex shared task list application definition in the
+[application_features](./application_features) file.  Below is the primary bit of the use case in diagram form (made
+from yUML; see the application definition doc for more info).  I'm not sure I got the relations correct, but I think so.
+
+![use_case_diagram.png](https://github.com/nmschulte/shared-todo/raw/master/use_case_diagram.png)
 
 
 possible (clever?) project names
