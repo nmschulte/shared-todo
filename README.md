@@ -1,5 +1,10 @@
 shared task list application
 ========
+* [Overview / Purpose](#overview--purpose)
+* [(Use Case) Design Goals](#use-case-design-goals)
+* [Building / Running the Example entry-point](#building--running-the-example-entry-point)
+* [possible (clever?) project names](#possible-clever-project-names)
+* [initial thoughts](#initial-thoughts)
 
 Overview / Purpose
 ----
