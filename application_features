@@ -7,12 +7,30 @@ ultimately; possibly even beyond version bumps, if we're really that entheusiast
 versioning/updates/upgrades are inherent in the UX, no?  We talk to the user about them in the app so they're aware and
 understanding too, why should those components be special?)...
 
-BEGIN!
+shared-todo
 ====
-
-The app will be multi-tenant (multi-user).  Users can create and manage lists of tasks.  Tasks can be copmleted, and
+The app will be multi-tenant (multi-user).  Users can create and manage lists of tasks.  Tasks can be completed, and
 have an associated deadline.  Further, task lists can be shared between users, each with their own access permissions,
 managed by the owner.
+
+Learning about shared-todo/Marketing
+====
+blah
+ - blah 
+ - blah 
+
+Account Management / Authentication
+====
+Accounts are identified by an email address and a secured by a (verified; twice entered) password.  Passwords can be
+reset, with the time-limited (15 minutes) generated password sent to the email address; if the time-limit expires the
+process will have to be repeated.
+
+Managing an account
+---
+Create an account.
+Authenticate to an account. (Login.)
+Reset account password. (Must be logged out.)
+
 
 Task Lists
 ====
