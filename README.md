@@ -32,6 +32,18 @@ from yUML; see the application definition doc for more info).  I'm not sure I go
 ![use_case_diagram.png](https://github.com/nmschulte/shared-todo/raw/master/use_case_diagram.png)
 
 
+Building / Running the Example entry-point
+----
+So, the application is itself entirely encapsulated (as a design goal).  As such, this project houses both the
+application src and an example entry-point that actually deals with hosting the application.  The build does two things:
+
+1. builds the application module.
+1. deploys the entry-pointthe current build targets an ES5 environment with AMD module support; as such, it:
+  1. transpiles the ES6 application source code to ES5
+  1. concatenates the built ES5 source code
+  1. writes the source and sourcemap to /dist
+     1
+
 possible (clever?) project names
 ----
 
